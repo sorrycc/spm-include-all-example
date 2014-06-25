@@ -1,0 +1,22 @@
+{
+  "name": "include-all-example",
+  "version": "1.0.0",
+  "spm": {
+    "output": [
+      "index.js",
+      "index.css",
+      "index.html"
+    ],
+    "dependencies": {
+      "seajs": "2.2.1",
+      "anima-yocto": "1.0.1"
+    },
+    "engines": {
+      "seajs": "2.2.1"
+    },
+    "buildArgs": "--include all --ignore anima-yocto"
+  },
+  "amb": {
+    "img_src": "./img/"
+  }
+}

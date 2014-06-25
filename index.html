@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>include-all-example</title>
+<link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+
+  <h1>Hello</h1>
+  <div id="content">..</div>
+
+  <script src="./sea-modules/seajs/2.2.1/dist/sea.js?nowrap"></script>
+  <script>
+    seajs.config({
+      base: "/",
+      alias: {
+        "anima-yocto": "sea-modules/anima-yocto/1.0.1/index"
+      }
+    });
+  </script>
+
+  <script src="./ignored/anima-yocto.js?nowrap"></script>
+  <script>
+    seajs.use('index');
+  </script>
+
+</body>
+</html>
