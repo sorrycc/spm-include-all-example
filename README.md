@@ -4,5 +4,12 @@
 
 ```bash
 $ spm install
+$ spm server
+```
+
+or
+
+```bash
+$ amb install
 $ amb server
 ```
